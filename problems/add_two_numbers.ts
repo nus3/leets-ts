@@ -27,7 +27,7 @@ function addVal(
   l1: ListNodeNus3 | null,
   l2: ListNodeNus3 | null,
   isAddOne?: boolean
-) {
+): ListNodeNus3 | null {
   if (l1 === null && l2 === null && isAddOne) {
     return new ListNodeNus3(1);
   }
@@ -62,7 +62,6 @@ function consoleLinkedListValue(li: ListNodeNus3 | null) {
   consoleLinkedListValue(li?.next || null);
 }
 
-// @ts-ignore
 function main() {
   // const l1 = new ListNodeNus3(2, new ListNodeNus3(4, new ListNodeNus3(3)));
   // const l2 = new ListNodeNus3(5, new ListNodeNus3(6, new ListNodeNus3(4)));
@@ -92,3 +91,5 @@ function main() {
 }
 
 main();
+
+export {};

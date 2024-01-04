@@ -39,3 +39,5 @@ const main = () => {
 };
 
 main();
+
+export {};
