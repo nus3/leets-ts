@@ -28,7 +28,7 @@ function convert(s: string, numRows: number): string {
   }
 
   let result = "";
-  for (const [key, value] of sMap) {
+  for (const [_, value] of sMap) {
     result = result + value.join("");
   }
 
